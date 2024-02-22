@@ -1,24 +1,14 @@
 <div class="sidepanel-inner d-flex flex-column">
-        <div class="menu-toggle">
-            <button id="menu-toggle-button">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M2 3.5A.5.5 0 0 1 2.5 3h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zM2.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 1 0V8a.5.5 0 0 0-.5-.5zm0 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-.5-.5zm11-5a.5.5 0 0 0 0-1h-11a.5.5 0 0 0 0 1h11zM13 9.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1 0-1h11a.5.5 0 0 1 .5.5z"/>
-                </svg>
-            </button>
-        </div>
         <nav>
             <ul class="app-menu list-unstyled accordion" id="menu-accordion">
                 <a class="nav-link active" href="sidebar">
-
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z" />
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z" />
                         <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
                     </svg>
-                    </span>
                     <span class="nav-link-text">Dashboard</span>
                 </a>
+                
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="docs.html">
@@ -70,16 +60,7 @@
     </div>
     
     <style>
-        .sidepanel-inner {
-    border-right: 2px solid #ccc; /* Ajoute une bordure droite à la side bar */
-    transition: width 0.5s; /* Ajoute une transition pour l'effet d'étirement */
-    overflow-x: hidden; /* Empêche le contenu de déborder horizontalement */
-}
-
-.menu-toggle {
-    padding: 10px;
-    border-bottom: 2px solid #ccc; /* Ajoute une bordure en bas du bouton de menu */
-}
+        
 
 #menu-toggle-button {
     background: none;
@@ -87,13 +68,6 @@
     cursor: pointer;
 }
 
-#menu-toggle-button:hover {
-    transform: scale(1.1); /* Ajoute un effet d'agrandissement au survol */
-}
-
-.sidepanel-inner:hover {
-    width: 250px; /* Définit la largeur étendue de la side bar au survol */
-}
 
 
 *{
@@ -109,32 +83,18 @@ nav{
   height: 100%;
   left: 0;
   background-color: #fff;
-  width: 90px;
+  width: 45px;
   overflow: hidden;
   transition: width 0.2s linear;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
-a{
-  position: relative;
-  color: rgb(85, 83, 83);
-  font-size: 14px;
-  display: table;
-  width: 300px;
-  padding: 10px;
-}
-
-.nav-item{
-  position: relative;
-  top: 12px;
-  margin-left: 10px;
-}
 
 a:hover{
-  background: #eee;
+  background: #ffaa017f;
 
 }
 nav:hover{
-  width: 280px;
+  width: 180px;
   transition: all 0.5s ease;
 }
 body {
@@ -144,13 +104,12 @@ body {
 }
 .sidepanel-inner {
     position: fixed;
-    top: 50px; /* Distance entre le haut de la fenêtre et le haut de la side bar */
-    left: 0;
-    width: 90px; /* Largeur de la side bar */
+    top: 200px; /* Distance entre le haut de la fenêtre et le haut de la side bar */
+    left: 0.1rem;
+    width: 100%; /* Largeur de la side bar */
     height: calc(100% - 50px); /* Hauteur de la side bar, en prenant en compte la hauteur de la nav bar */
-    background-color: #ffffff; /* Couleur de fond de la side bar */
-    border-right: 2px solid #ccc; /* Bordure droite de la side bar */
-    transition: width 0.5s; /* Transition pour l'effet d'étirement */
+    background-color: #fffffffe; /* Couleur de fond de la side bar */
+    transition: width 5s; /* Transition pour l'effet d'étirement */
     overflow-x: hidden; /* Empêche le contenu de déborder horizontalement */
 }
 
