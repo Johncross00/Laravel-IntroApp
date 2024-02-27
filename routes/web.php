@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LayoutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layouts/app');
 });
+
+
+Route::get('/dashboard', [LayoutController::class, 'index'])->name('dashboard');
+Route::get('/docs', [LayoutController::class, 'docs'])->name('docs');
+Route::get('/orders', [LayoutController::class, 'orders'])->name('orders');
+Route::get('/settings', [LayoutController::class, 'settings'])->name('settings');
