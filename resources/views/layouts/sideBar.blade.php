@@ -78,7 +78,7 @@
 }
 
 nav{
-  position: absolute;
+  position: relative;
   top: 0;
   bottom: 0;
   height: 100%;
@@ -101,15 +101,14 @@ nav:hover{
 body {
   font-family: "Poppins", sans-serif;
   padding: 100px;
-  padding-bottom: 500px;
 }
 .sidepanel-inner {
     position: fixed;
     top: 200px; /* Distance entre le haut de la fenêtre et le haut de la side bar */
     left: 0.1rem;
-    width: 100%; /* Largeur de la side bar */
+    width: 100%; 
     height: calc(100% - 50px); /* Hauteur de la side bar, en prenant en compte la hauteur de la nav bar */
-    background-color: #fffffffe; /* Couleur de fond de la side bar */
+    background-color: #9ad51225; /* Couleur de fond de la side bar */
     transition: width 5s; /* Transition pour l'effet d'étirement */
     overflow-x: hidden;
 }

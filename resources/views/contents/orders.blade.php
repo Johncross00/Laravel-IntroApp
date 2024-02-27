@@ -1,4 +1,4 @@
 @extends('layouts.app')
 @section('content')
-<h1>THIS IS THE ORDERS</h1>
+<h1><center>THIS IS THE ORDERS</center></h1>
 @endsection
