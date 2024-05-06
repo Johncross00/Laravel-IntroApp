@@ -15,7 +15,7 @@ use App\Http\Controllers\LayoutController;
 */
 
 Route::get('/', function () {
-    return view('layouts/app');
+    return view('welcome');
 });
 
 
@@ -23,3 +23,8 @@ Route::get('/dashboard', [LayoutController::class, 'index'])->name('dashboard');
 Route::get('/docs', [LayoutController::class, 'docs'])->name('docs');
 Route::get('/orders', [LayoutController::class, 'orders'])->name('orders');
 Route::get('/settings', [LayoutController::class, 'settings'])->name('settings');
+
+
+Route::get('/add', [LayoutController::class, 'ind'])->name('ind');
+Route::post('/add', [LayoutController::class, 'add'])->name('add');
+
