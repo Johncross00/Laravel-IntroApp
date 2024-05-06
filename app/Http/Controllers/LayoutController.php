@@ -21,4 +21,14 @@ class LayoutController extends Controller
     public function settings(){
         return view('contents/settings');
     }
+
+    public function ind(){
+        $somme = 0;
+        return view("addition")->with('Somme', $somme);
+    }
+
+    public function add(Request $request){
+        $somme = $request->a+$request->b;
+        return view("addition")->with('Somme', $somme);
+    }
 }
